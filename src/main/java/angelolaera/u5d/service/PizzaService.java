@@ -16,7 +16,7 @@ public class PizzaService {
     @Autowired
     private PizzaRepository pizzaRepository;
 
-    public List<Pizza> getAllToppings() {
+    public List<Pizza> getAllPizza() {
         return pizzaRepository.findAll();
     }
 

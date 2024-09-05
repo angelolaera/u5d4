@@ -14,7 +14,7 @@ public class BevandaService {
     @Autowired
     private BevandaRepository bevandaRepository;
 
-    public List<Bevanda> getAllToppings() {
+    public List<Bevanda> getAllBevanda() {
         return bevandaRepository.findAll();
     }
 
