@@ -2,12 +2,11 @@ package angelolaera.u5d4.entities;
 
 import jakarta.persistence.*;
 import lombok.*;
-import org.springframework.data.annotation.Id;
 
 import java.util.List;
 
 @Entity
-@Table(name="topping")
+@Table(name="Pizza")
 @Getter
 @Setter
 @ToString
@@ -19,6 +18,7 @@ public class Pizza {
 
     @Setter(AccessLevel.NONE)
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
     private String nome;
     private List<String> ingredientiBase;

@@ -1,7 +1,5 @@
 package angelolaera.u5d.service;
 
-import angelolaera.u5d4.entities.Bevanda;
-
 import angelolaera.u5d4.entities.Pizza;
 import angelolaera.u5d4.repositories.PizzaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,7 +14,7 @@ public class PizzaService {
     @Autowired
     private PizzaRepository pizzaRepository;
 
-    public List<Pizza> getAllPizza() {
+    public List<Pizza> getAllPizzas() {
         return pizzaRepository.findAll();
     }
 
